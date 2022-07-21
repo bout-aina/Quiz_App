@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Score">
+
+
+    <ImageView
+        android:id="@+id/top_curve"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-50dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="-50dp"
+        android:layout_marginRight="-50dp"
+        android:src="@drawable/top_shape"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/name_text"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="10dp"
+        android:text=" "
+        android:textColor="@color/white"
+        android:textSize="28sp"
+
+
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="50dp"
+        android:text="Your score is"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+
+
+        />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="202dp"
+        android:layout_height="187dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="264dp"
+        app:cpb_background_progressbar_color="@color/red"
+        app:cpb_background_progressbar_width="15dp"
+        app:cpb_progress="50"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="100"
+        app:cpb_progressbar_color="@color/green"
+        app:cpb_progressbar_width="16dp"
+        app:cpb_start_angle="10" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="50%"
+        android:textColor="@color/green"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="165dp"
+        android:text="True answers"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/truescore"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="144dp"
+        android:text=""
+        android:textColor="@color/green"
+        android:textSize="40sp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="208dp"
+        android:text="Wrong answers"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/wrongscore"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="279dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="86dp"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="40sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="216dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="38dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="18dp">
+
+        <Button
+
+            android:id="@+id/bTry"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="55dp"
+            android:background="@drawable/ripple_white"
+            android:ems="15"
+            android:text="Replay"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="203dp"
+        android:layout_marginBottom="38dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="18dp">
+
+        <Button
+            android:id="@+id/bLogout"
+            android:layout_width="147dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="55dp"
+            android:background="@drawable/ripple_white"
+            android:ems="15"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_card"
+        android:layout_width="305dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="114dp"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="18dp">
+
+        <Button
+            android:id="@+id/map_gm"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="113dp"
+            android:layout_marginBottom="138dp"
+            android:text="Map"
+
+            android:textSize="21dp" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".Quiz2"
+android:orientation="vertical"
+android:padding="15dp">
+
+    <TextView
+
+        android:layout_width="277dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:text="QUESTION 2"
+        android:textColor="@color/blue"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="421dp"
+        android:layout_height="244dp"
+        android:src="@drawable/q2"
+
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:text="Il y a un risque d'aquaplanage si je ne ralentis pas :"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oui" />
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Peut etre" />
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Non" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="NEXT" />
+</LinearLayout>

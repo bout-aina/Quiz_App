@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "442181426161",
+    "firebase_url": "https://quizappvc-default-rtdb.firebaseio.com",
+    "project_id": "quizappvc",
+    "storage_bucket": "quizappvc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442181426161:android:d2f89d5df2137097478250",
+        "android_client_info": {
+          "package_name": "com.naour.quiz_app_c"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442181426161-l7kg5s5cvprib3sd5tuig3b6p87t9ql5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKuT2igCHIiXcgg_MX11_UFTG1T3j71p0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442181426161-l7kg5s5cvprib3sd5tuig3b6p87t9ql5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
